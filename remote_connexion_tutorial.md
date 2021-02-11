@@ -1,12 +1,12 @@
 # Mount remote server on your linux machine
 
-You might want to access the ```/inhouse``` directory on your own machine from
+You might want to access the ```inhouse``` directory on your own machine from
 any internet connection. An easy way to do it is using ssh connection.
 
-You can actually use different remote hosts to access the ```/inhouse```
+You can actually use different remote hosts to access the ```inhouse```
 directory. If you are out of the esrf walls and want to connect to any of the
 esrf hosts, you will first need to connect to the esrf firewall. This is why the
-easiest way to make the connection to the ```/inhouse``` directory is by
+easiest way to make the connection to the ```inhouse``` directory is by
 connecting to ***firewall.esrf.fr***. Therefore, in the following, you can
 replace ***remoteserver*** with ***firewall.esrf.fr***.
 
@@ -16,7 +16,7 @@ wich is not always convenient. Especially if you want to mount a remote
 directory but also if you plan on running scripts that need to connect several 
 times to different remote servers.
 
-In order to avoid entering the password when mouting the ```/inhouse```
+In order to avoid entering the password when mouting the ```inhouse```
 directory, you may generate a key on your local machine. This key will somehow
 replace you password so that you do not have to type it when accessing the
 remote host.
@@ -94,6 +94,6 @@ the following line:
 ```Bash
 alias mountinhouse='sshfs user@remotehost:/data/id01/inhouse ~/mount/inhouse'
 ```
-Then, the ```/inhouse``` directory will be mounted with the ```mountinhouse```
+Then, the ```inhouse``` directory will be mounted with the ```mountinhouse```
 command from your terminal (should work with any new terminal session,
 ```source ~/.bashrc``` to make it work on the current terminal session).

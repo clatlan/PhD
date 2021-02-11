@@ -1,4 +1,4 @@
-# Mount remote server on your linux machine
+# Mount remote server directory on your linux machine
 
 You might want to access the ```inhouse``` directory on your own machine from
 any internet connection. An easy way to do it is using ssh connection.

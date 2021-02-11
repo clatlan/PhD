@@ -32,8 +32,8 @@ not need it.
 Then you must configure the remote host so it may accept the connection from you
 local machine thanks to the key you generated.
 
-Make a .ssh directory in the ```~/``` on the remote server (the directory may
-already exist).
+Make a ```.ssh``` directory in the ```~/``` directory on the remote server
+(the directory may already exist, which is ok).
 ```Bash
 ssh user@remotehost mkdir -p .ssh
 ```
@@ -70,7 +70,7 @@ directory that contains the remote directories.
 ```
 mkdir ~/mount
 ```
-Make the inhouse directory
+Make the ```inhouse``` directory
 ```Bash
 mkdir ~/mount/inhouse
 ```
@@ -95,4 +95,5 @@ the following line:
 alias mountinhouse='sshfs user@remotehost:/data/id01/inhouse ~/mount/inhouse'
 ```
 Then, the ```/inhouse``` directory will be mounted with the ```mountinhouse```
-command from your terminal.
+command from your terminal (should work with any new terminal session,
+```source ~/.bashrc``` to make it work on the current terminal session).
